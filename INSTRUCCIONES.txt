@@ -1,0 +1,14 @@
+INSTRUCCIONES BD:
+
+- Crear una nueva BD vacía
+- Abrir ya sea en terminal de VSCode o CMD
+- Ubicar la ruta del archivo SQL a ocupar para copiar BD
+- Ejecutar el siguiente comando:
+psql -U nombre_usuario -d nombre_BD_nueva < nombre_archivo_SQL
+
+
+NOTA:
+- Las aplicaciones las desarrollé en la versión de Python 3.11.9 por si quieren que todo sea completamente compatible
+- Para ejecutar las aplicaciones debes instalar todas las librerías que están en los import del inicio de los archivos mediante PIP (librería que viene cuando instalas Python).
+- El archivo más ordenado es el de la aplicación del punto de venta de abarrotes, pero el más completo por así decirse es el de la paletería ya que incluye login, apertura y cierre de turnos, manejo de código qr para productos, etc.
+- Añadí dentro de la carpeta de la app de paletería un archivo llamado "qrs.py", este archivo lo que hace es conectarse a ala BD de paletería y te genera todos los códigos QR de los productos que existan, es decir, en este caso como ya hay productos en la BD pero no tienes los QR´s de escaneo (en caso de querer probarlos) los puedes generar todos de un jalón con este código.
